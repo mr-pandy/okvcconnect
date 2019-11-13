@@ -1,0 +1,171 @@
+/*
+primary: #83F3ED
+black: #0011627
+white: #FAFAFF
+red: #C83732
+*/
+body{
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3{
+    font-weight: 900;
+}
+h4,h5,h6{
+    font-weight: 700;
+}
+iframe{
+    height: 430px;
+    width: 400px;
+}
+/*
+Buttons
+*/
+.btn-outline-secondary{
+    color: #38393B !important;
+    background: transparent !important;
+    border-radius: 0;
+    border-color: #38393B!important;
+    position: relative;
+}
+.btn-outline-secondary::before{
+    background: #C83732;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+    content: '';
+}
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+.btn-secondary{
+    border-color: #38393B !important;
+    border-radius: 0;
+    background: #38393B !important;
+    color: #fafaff;
+
+}
+.btn-secondary:hover{
+    color: #C83732 !important;
+
+}
+.btn-primary{
+    background: #C83732 !important;
+    color: #fafaff !important;
+    border-color: #38393B !important;
+    border-radius: 0;
+}
+.btn-primary:hover{
+    background: #38393B !important;
+    color: #C83732 !important;
+    border-color: #C83732 !important;
+}
+
+/*
+Navbar
+*/
+.navbar{
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    
+}
+.navbar-brand,.nav-link{
+    color: #C83732;
+}
+.navbar-brand:hover,.nav-link:hover{
+    color: #777;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+/*
+Call to action
+*/
+
+.call-to-action{
+    background: #38393B;
+    color: #fafafa;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background: #C83732;
+}
+
+
+i{
+    color: #C83732;
+    font-size: 2rem;
+}
+
+/*
+Portfolio
+*/
+.dark{
+    color: #C83732;
+    background: #38393B;
+    height: 300px;
+    border: none;
+}
+.dark i{
+    color: red;
+    font-size: 1.2rem;
+    
+}
+.portfolio .img-fluid{
+    height: 300px;
+    width: 1080px;
+    object-fit: cover;
+    border: none;
+}
+.portfolio .col-lg-3{
+    position: relative;
+}
+.filter{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: #C83732;
+    border: none;
+}
+
+/*
+footer
+*/
+.footer{
+    background: #C83732;
+    color: #fafaff;
+}
+.footer a{
+    color: #fafaff;
+}
+/*
+Media Qwery
+*/
+@media (max-width:900px){
+    .navbar .nav-item{
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+   .call-to-action .container{
+       width: 100% !important;
+   }
+}
+@media (max-width:1024px){
+    iframe{
+        width: 1080px;
+        margin-bottom: 1.2rem;
+    }
+    .contact{
+        margin-top: 1.8rem;
+    }
+}
